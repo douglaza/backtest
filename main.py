@@ -53,11 +53,11 @@ qs.extend_pandas()
 rentabilidade_por_carteiras.index = pd.to_datetime(rentabilidade_por_carteiras.index)
 
 
-# print(rentabilidade_por_carteiras)
+print(rentabilidade_por_carteiras)
 
 rentabilidade_ao_ano = (1 + rentabilidade_por_carteiras.loc['2023-06-30', 'modelo']) ** (1/7.5) - 1
 
-print(rentabilidade_ao_ano)
+# print(rentabilidade_ao_ano)
 
 
 # qs.plots.monthly_heatmap(rentabilidade_por_carteiras['modelo'])
